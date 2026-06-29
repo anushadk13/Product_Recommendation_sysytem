@@ -1,0 +1,18 @@
+{
+  "run_name": "demand_forecast",
+  "experiment": "personalized_merchandising_v1",
+  "start_time": "2026-06-29T00:22:58.689601",
+  "params": {
+    "architecture": "LightGBM",
+    "horizon_days": 7
+  },
+  "metrics": {
+    "mae": 0.1994,
+    "rmse": 0.306,
+    "n_samples": 1813
+  },
+  "tags": {
+    "model_summary": "LightGBM demand forecast: 7-day demand spike detection"
+  },
+  "end_time": "2026-06-29T00:22:59.756424"
+}
