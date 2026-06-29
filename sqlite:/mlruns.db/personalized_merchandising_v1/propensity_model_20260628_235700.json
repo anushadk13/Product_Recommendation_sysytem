@@ -1,0 +1,19 @@
+{
+  "run_name": "propensity_model",
+  "experiment": "personalized_merchandising_v1",
+  "start_time": "2026-06-28T23:56:57.504327",
+  "params": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "architecture": "XGBoost-TwoTower"
+  },
+  "metrics": {
+    "val_auc": 0.4938,
+    "n_train": 31972,
+    "n_val": 7993
+  },
+  "tags": {
+    "model_summary": "XGBoost propensity model: predicts P(purchase|user,product)"
+  },
+  "end_time": "2026-06-28T23:57:00.771107"
+}

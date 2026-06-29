@@ -1,0 +1,17 @@
+{
+  "run_name": "price_elasticity",
+  "experiment": "personalized_merchandising_v1",
+  "start_time": "2026-06-28T23:48:52.605400",
+  "params": {
+    "architecture": "T-Learner",
+    "treatment": "discount_pct"
+  },
+  "metrics": {
+    "mse_control": 0.0026539999525994062,
+    "mse_treated": 0.04186499863862991
+  },
+  "tags": {
+    "model_summary": "Causal T-Learner: estimates CATE of price discounts on conversion"
+  },
+  "end_time": "2026-06-28T23:48:52.965067"
+}

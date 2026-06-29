@@ -1,0 +1,17 @@
+{
+  "run_name": "inventory_pressure",
+  "experiment": "personalized_merchandising_v1",
+  "start_time": "2026-06-28T23:56:47.004122",
+  "params": {
+    "architecture": "XGBoost",
+    "threshold": 0.65
+  },
+  "metrics": {
+    "val_mse": 0.0012159999459981918,
+    "val_auc_threshold": 0.9744
+  },
+  "tags": {
+    "model_summary": "XGBoost inventory pressure: deadstock risk [0,1]"
+  },
+  "end_time": "2026-06-28T23:56:47.174901"
+}

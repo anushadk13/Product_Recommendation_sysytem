@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Merchandising Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar Controls -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <h2>AI Engine</h2>
+                <div class="pulse-indicator"></div>
+            </div>
+
+            <div class="control-group">
+                <label for="userSelect">User Context</label>
+                <select id="userSelect" class="glass-input">
+                    <option value="U00001">U00001 (VIP, Eyewear Fan)</option>
+                    <option value="U00002">U00002 (New, Price Sensitive)</option>
+                    <option value="U00003">U00003 (Regular, High Spend)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="presetSelect">Strategy (A/B Test)</label>
+                <select id="presetSelect" class="glass-input">
+                    <option value="balanced">Balanced (Default)</option>
+                    <option value="lenskart">Lenskart (Clear Inventory)</option>
+                    <option value="dyson">Dyson (Push Trends)</option>
+                    <option value="amazon">Amazon (Max Conversion)</option>
+                    <option value="clearance">Flash Sale (Urgent)</option>
+                </select>
+                <p id="presetDescription" class="preset-desc">General e-commerce: balanced trade-off across all signals</p>
+            </div>
+            
+            <div class="metrics-panel">
+                <div class="metric">
+                    <span class="label">API Latency</span>
+                    <span class="value" id="latencyDisplay">-- ms</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Candidates Scored</span>
+                    <span class="value" id="candidatesDisplay">--</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <h1>Personalized For You</h1>
+                <p class="subtitle">Real-time ranked product grid based on multi-model AI</p>
+            </header>
+
+            <div id="loadingState" class="loading-state hidden">
+                <div class="spinner"></div>
+                <p>Generating personalized grid...</p>
+            </div>
+
+            <div id="productGrid" class="product-grid">
+                <!-- Products will be injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Details Modal -->
+    <div id="detailsModal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <h2 id="modalTitle">Product Score Breakdown</h2>
+            <div class="modal-body" id="modalBody">
+                <!-- Breakdown will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

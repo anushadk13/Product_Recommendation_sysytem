@@ -1,0 +1,10 @@
+{
+  "run_name": "price_elasticity",
+  "experiment": "personalized_merchandising_v1",
+  "start_time": "2026-06-28T12:33:45.996115",
+  "params": {
+    "architecture": "T-Learner",
+    "treatment": "discount_pct"
+  },
+  "metrics": {
+    "mse_control": 
